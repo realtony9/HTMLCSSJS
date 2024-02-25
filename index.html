@@ -3,61 +3,51 @@
     <head>
         <title>The Elue band</title>
         <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">Home</li></a>
                     <li><a href="store.html">Store</li></a>
                     <li><a href="about.html">About</li></a>
                 </ul>
             </nav>
-            <hr>
-            <h1>The Generics</h1>
-            <button>Get Our Latest Album</button>
-            <br>
-            <br>
-            <!--Find a suitable background image for header-->
-            <button>&#9658;</button>
+            <h1 class="band-name band-name-large">The Generics</h1>
+            <div class="container">
+                <button class="btn btn-header">Get Our Latest Album</button>
+                <!--Find a suitable background image for header-->
+                <button class="btn btn-header btn-play">&#9658;</button>
+            </div>
         </header>
-        <section>
-            <h2>Tours</h2>
+        <section class="content-section container">
+            <h2 class="section-header">Tours</h2>
             <div>
-                <div>
-                    <strong>November 5th</strong>
-                    &lt;&gt;
-                    <span>Anthony</span>
-                    &lt;&gt;
-                    <span>McKinney, TX</span>
-                    &lt;&gt;
-                    <button type="button">BUY Tickets</button>
-                    <hr>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">November 5th</span>
+                    <span class="tour-item tour-arena">Anthony</span>
+                    <span class="tour-item tour-city">McKinney, TX</span>
+                    <button class="btn tour-item tour-btn btn-primary" type="button">BUY Tickets</button>
                 </div>
-                <div>
-                    <strong>April 8th</strong>
-                    &lt;&gt;
-                    <span>David</span>
-                    &lt;&gt;
-                    <span>McKinney, TX</span>
-                    &lt;&gt;
-                    <button type="button">BUY Tickets</button>
-                    <hr>
+                <div class="tour-row">
+                    <strong class="tour-item tour-date">April 8th</strong>
+                    <span class="tour-item tour-arena">David</span>
+                    <span class="tour-item tour-city">McKinney, TX</span>
+                    <button class="btn tour-item tour-btn btn-primary" type="button">BUY Tickets</button>
                 </div>
-                <div>
-                    <strong>July 28th</strong>
-                    &lt;&gt;
-                    <span>Fran</span>
-                    &lt;&gt;
-                    <span>Miami, FL</span>
-                    &lt;&gt;
-                    <button type="button">BUY Tickets</button>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">July 28th</span>
+                    <span class="tour-item tour-arena">Fran</span>
+                    <span class="tour-item tour-city">Miami, FL</span>
+                    <button class="btn tour-item tour-btn btn-primary" type="button">BUY Tickets</button>
                 </div>
             </div>
         </section>
-        <footer>
-            <h3>The Generic</h3>
-            <ul>
+        <footer class="main-footer">
+            <div class="main-footer-container">
+            <h3 class="band-name">The Generic</h3>
+            <ul class="nav footer-nav">
                 <li>
                     <a href="http://spotify.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://e7.pngegg.com/pngimages/613/244/png-clipart-spotify-music-streaming-media-music-video-black-and-white-spotify-logo-hand-logo-thumbnail.png" width="100">
@@ -74,6 +64,7 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </footer>
     </body>
 </html>
